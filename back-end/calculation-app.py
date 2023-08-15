@@ -214,6 +214,32 @@ def find_latest_zerocrossings_index(spread):
 
 
 def compute_combinations():
+    """
+    Retrieve data from the 'data-dict' endpoint, and apply calculation to find the candidates.
+
+    response type : {'symbol_name' : [[timestamp: string, close_price: float], [...], [...]]}
+
+    candidates type : {'candidates': [{'current_z': float,
+                                        'series1': str, 
+                                        'series2': str, 
+                                        'p_val': float, 
+                                        'zero_crossings': int,
+                                        'adf': float, 
+                                        'half_life': int, 
+                                        'opt_p_z': float or 1111 (position in), 
+                                        'opt_p_z_2nd': float or 1111 (position in), 
+                                        'opt_n_z': float or 1111 (position in),
+                                        'opt_n_z_2nd': float or 1111 (position in), 
+                                        'beta': float,
+                                        'mean': float, 
+                                        'std': float, 
+                                        'zero_crossings_time': int,
+                                        'zero_crossings_len': int, 
+                                        'series1_close_time': list in list [[str, float]...],
+                                        'series2_close_time': list in list [[str, float]...],
+                                        'z_chart': list}]
+                                        }
+    """
     while True:
         response = requests.get(FIRST_APP_ENDPOINT)
         print(response)
@@ -333,6 +359,27 @@ def compute_combinations():
 
 
 def update_market_data():
+    """
+    Retrieve data from 'latest-dict' and calculate the current z-score of the candidates accordingly. If current z-score meets the optimal 
+    trading z-score, delete from candidates and send it to positions
+
+    reponse type : {"symbol name":[timestamp: str, close_price: float]}
+
+    positions type : {"positions": [{"current_z": float,
+                                    "series1": str,
+                                    "series2": str,
+                                    "series1_position": str "sell" or "buy",
+                                    "series2_position": str "sell" or "buy", 
+                                    "position_in_zscore": float,
+                                    "beta": float, 
+                                    "mean": float, 
+                                    "std": std, 
+                                    "series1_close_time": list in list [[str, float]...], 
+                                    "series2_close_time": list in list [[str, float]...], 
+                                    "z_chart": list}]}
+
+
+    """
     while True:
         response = requests.get(FIRST_APP_ENDPOINT1)
         if response.status_code == 200:
@@ -380,14 +427,11 @@ def update_market_data():
                     series2_np = beta*series2_np
 
                     spread = series1_np - series2_np
-                    spread_zscore = (spread - mean) / std
+                    spread_zscore_nd = (spread - mean) / std
 
                     # Convert the numpy array to a Python list
-                    spread_zscore_list = spread_zscore.tolist()
-                    current_z = spread_zscore_list[-1]
-
-                    # Serialize the list to JSON
-                    spread_zscore = json.dumps(spread_zscore_list)
+                    spread_zscore = spread_zscore_nd.tolist()
+                    current_z = spread_zscore[-1]
 
                     print(
                         f"updating z_score: {candidate['current_z']} to {current_z}")
@@ -409,25 +453,25 @@ def update_market_data():
                     if candidate["opt_p_z"] != 0 and current_z > candidate["opt_p_z"]:
                         market_positions["positions"].append({"current_z": current_z, "series1": series1, "series2": series2, "series1_position": "sell", "series2_position": "buy", "position_in_zscore": candidate["opt_p_z"],
                                                               "beta": beta, "mean": mean, "std": std, "series1_close_time": candidate["series1_close_time"], "series2_close_time": candidate["series2_close_time"], "z_chart": spread_zscore})
-                        candidate["opt_p_z"] = "진입완료"
+                        candidate["opt_p_z"] = 1111
 
                     if candidate["opt_p_z_2nd"] != 0 and current_z > candidate["opt_p_z_2nd"]:
                         market_positions["positions"].append({"current_z": current_z, "series1": series1, "series2": series2, "series1_position": "sell", "series2_position": "buy", "position_in_zscore": candidate["opt_p_z_2nd"],
                                                               "beta": beta, "mean": mean, "std": std, "series1_close_time": candidate["series1_close_time"], "series2_close_time": candidate["series2_close_time"], "z_chart": spread_zscore})
-                        candidate["opt_p_z_2nd"] = "진입완료"
+                        candidate["opt_p_z_2nd"] = 1111
 
                     if candidate["opt_n_z"] != 0 and current_z < candidate["opt_n_z"]:
                         market_positions["positions"].append({"current_z": current_z, "series1": series1, "series2": series2, "series1_position": "buy", "series2_position": "sell", "position_in_zscore": candidate["opt_n_z"],
                                                               "beta": beta, "mean": mean, "std": std, "series1_close_time": candidate["series1_close_time"], "series2_close_time": candidate["series2_close_time"], "z_chart": spread_zscore})
-                        candidate["opt_n_z"] = "진입완료"
+                        candidate["opt_n_z"] = 1111
 
                     if candidate["opt_n_z_2nd"] != 0 and current_z < candidate["opt_n_z_2nd"]:
                         market_positions["positions"].append({"current_z": current_z, "series1": series1, "series2": series2, "series1_position": "buy", "series2_position": "sell", "position_in_zscore": candidate["opt_n_z_2nd"],
                                                               "beta": beta, "mean": mean, "std": std, "series1_close_time": candidate["series1_close_time"], "series2_close_time": candidate["series2_close_time"], "z_chart": spread_zscore})
-                        candidate["opt_n_z_2nd"] = "진입완료"
+                        candidate["opt_n_z_2nd"] = 1111
 
                     # position 진입 완료하거나 candidates에서 멀어져 market_candidates에서 삭제
-                    if (candidate["opt_p_z"] == 0 or candidate["opt_p_z"] == "진입완료") and (candidate["opt_p_z_2nd"] == 0 or candidate["opt_p_z_2nd"] == "진입완료") and (candidate["opt_n_z"] == 0 or candidate["opt_n_z"] == "진입완료") and (candidate["opt_n_z_2nd"] == 0 or candidate["opt_n_z_2nd"] == "진입완료"):
+                    if (candidate["opt_p_z"] == 0 or candidate["opt_p_z"] == 1111) and (candidate["opt_p_z_2nd"] == 0 or candidate["opt_p_z_2nd"] == 1111) and (candidate["opt_n_z"] == 0 or candidate["opt_n_z"] == 1111) and (candidate["opt_n_z_2nd"] == 0 or candidate["opt_n_z_2nd"] == 1111):
                         to_remove.append(candidate)
                     elif p_val > 0.05:
                         to_remove.append(candidate)
@@ -441,6 +485,13 @@ def update_market_data():
 
 
 def update_market_positions():
+    """
+    Retrieve data from 'latest-dict' and calculate the current z-score of the positions accordingly. If take-proift or stop-loss is met, delete from
+    positions.
+
+    reponse type : {"symbol name":[timestamp: str, close_price: float]}
+    
+    """
     while True:
         response = requests.get(FIRST_APP_ENDPOINT1)
         if response.status_code == 200:
@@ -486,13 +537,12 @@ def update_market_positions():
                     series2_np = beta*series2_np
 
                     spread = series1_np - series2_np
-                    spread_zscore = (spread - mean) / std
+                    spread_zscore_nd = (spread - mean) / std
 
                     # Convert the numpy array to a Python list
-                    spread_zscore_list = spread_zscore.tolist()
-                    current_z = spread_zscore_list[-1]
-                    # Serialize the list to JSON
-                    spread_zscore = json.dumps(spread_zscore_list)
+                    spread_zscore = spread_zscore_nd.tolist()
+                    current_z = spread_zscore[-1]
+
 
                     position["current_z"] = current_z
                     position["z_chart"] = spread_zscore

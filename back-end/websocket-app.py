@@ -92,8 +92,8 @@ def process_message(message):
 
     # Extract the first data element, if exists
     data = message.get('data', [{}])[0]
-    start = data.get('start')
-    close = data.get('close')
+    start = str(data.get('start'))
+    close = float(data.get('close'))
 
     with data_lock:
         # If the topic_key exists in the crypto_data and has at least one entry
