@@ -17,7 +17,7 @@ export default function Chart() {
   console.log(candidates)
 
   return (
-    <div>
+    <div style={{ marginTop: '100px' }}>
       {candidates.map((candidate, index) => (
         <DataTable
           key={index}
@@ -25,8 +25,8 @@ export default function Chart() {
           series1Name={candidate["series1"]}
           series2Name={candidate["series2"]}
           currentZscore={candidate["current_z"]}
-          optimalZPlus={candidate["opt_n_z"]} // You'll need to make sure this is part of the data object
-          optimalZMinus={candidate["opt_p_z"]} // You'll need to make sure this is part of the data object
+          optimalZPlus={candidate["opt_p_z"]} // You'll need to make sure this is part of the data object
+          optimalZMinus={candidate["opt_n_z"]} // You'll need to make sure this is part of the data object
         />
       ))}
     </div>
