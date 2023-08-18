@@ -490,7 +490,7 @@ def update_market_positions():
     positions.
 
     reponse type : {"symbol name":[timestamp: str, close_price: float]}
-    
+
     """
     while True:
         response = requests.get(FIRST_APP_ENDPOINT1)
@@ -542,7 +542,6 @@ def update_market_positions():
                     # Convert the numpy array to a Python list
                     spread_zscore = spread_zscore_nd.tolist()
                     current_z = spread_zscore[-1]
-
 
                     position["current_z"] = current_z
                     position["z_chart"] = spread_zscore
@@ -610,3 +609,6 @@ if __name__ == "__main__":
 
     # Start the Flask app
     app.run(port=5001)
+
+
+# fast api/ nodejs
