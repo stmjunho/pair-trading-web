@@ -1,0 +1,16 @@
+.cellTyperegular,
+.tableCell {
+  position: relative;
+}
+.cellTyperegular {
+  border: 1px solid #b9b9b9;
+  display: flex;
+  flex-direction: row;
+  padding: 16px 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 16px;
+  color: #323232;
+  font-family: Inter;
+}

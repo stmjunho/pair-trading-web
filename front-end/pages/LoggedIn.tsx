@@ -1,0 +1,138 @@
+import type { NextPage } from "next";
+import MarketCandidatesAccordionForm from "../components/MarketCandidatesAccordionForm";
+import FormContainer from "../components/FormContainer";
+import SidemenuLarge from "../components/SidemenuLarge";
+import styles from "./LoggedIn.module.css";
+const LoggedIn: NextPage = () => {
+  return (
+    <div className={styles.loggedIn}>
+      <MarketCandidatesAccordionForm
+        tableCell="Time"
+        tableCell1="Optimal z +/-"
+        lineRoundedChevronDown="/line-roundedchevron-down13.svg"
+        vector="/vector2.svg"
+        vector1="/vector3.svg"
+        vector2="/vector4.svg"
+        vector3="/vector5.svg"
+        vector4="/vector6.svg"
+        vector5="/vector7.svg"
+        vector6="/vector8.svg"
+        vector7="/vector9.svg"
+        vector8="/vector10.svg"
+        vector9="/vector11.svg"
+        vector10="/vector12.svg"
+        vector11="/vector13.svg"
+        vector12="/vector14.svg"
+        vector13="/vector15.svg"
+        vector14="/vector16.svg"
+        vector15="/vector17.svg"
+        vector16="/vector18.svg"
+        vector17="/vector19.svg"
+        vector18="/vector20.svg"
+        vector19="/vector21.svg"
+        vector20="/vector22.svg"
+        vector21="/vector23.svg"
+        vector22="/vector24.svg"
+        vector23="/vector25.svg"
+        vector24="/vector26.svg"
+        vector25="/vector27.svg"
+        vector26="/vector28.svg"
+        vector27="/vector29.svg"
+        vector28="/vector30.svg"
+        vector29="/vector31.svg"
+        vector30="/vector32.svg"
+        vector31="/vector33.svg"
+        group="/group.svg"
+        lineRoundedChevronRight="/line-roundedchevron-right4.svg"
+        lineRoundedChevronRight1="/line-roundedchevron-right5.svg"
+        lineRoundedChevronRight2="/line-roundedchevron-right6.svg"
+        lineRoundedChevronRight3="/line-roundedchevron-right7.svg"
+        arrowLeft="/arrowleft.svg"
+        arrowRight="/arrowright.svg"
+      />
+      <MarketCandidatesAccordionForm
+        tableCell="진입 시간"
+        tableCell1="진입 z score"
+        lineRoundedChevronDown="/line-roundedchevron-down14.svg"
+        vector="/vector34.svg"
+        vector1="/vector35.svg"
+        vector2="/vector36.svg"
+        vector3="/vector37.svg"
+        vector4="/vector38.svg"
+        vector5="/vector39.svg"
+        vector6="/vector40.svg"
+        vector7="/vector41.svg"
+        vector8="/vector42.svg"
+        vector9="/vector43.svg"
+        vector10="/vector44.svg"
+        vector11="/vector45.svg"
+        vector12="/vector46.svg"
+        vector13="/vector47.svg"
+        vector14="/vector48.svg"
+        vector15="/vector49.svg"
+        vector16="/vector50.svg"
+        vector17="/vector51.svg"
+        vector18="/vector52.svg"
+        vector19="/vector53.svg"
+        vector20="/vector54.svg"
+        vector21="/vector55.svg"
+        vector22="/vector56.svg"
+        vector23="/vector57.svg"
+        vector24="/vector58.svg"
+        vector25="/vector59.svg"
+        vector26="/vector60.svg"
+        vector27="/vector61.svg"
+        vector28="/vector62.svg"
+        vector29="/vector63.svg"
+        vector30="/vector64.svg"
+        vector31="/vector65.svg"
+        group="/group1.svg"
+        lineRoundedChevronRight="/line-roundedchevron-right8.svg"
+        lineRoundedChevronRight1="/line-roundedchevron-right9.svg"
+        lineRoundedChevronRight2="/line-roundedchevron-right10.svg"
+        lineRoundedChevronRight3="/line-roundedchevron-right11.svg"
+        arrowLeft="/arrowleft1.svg"
+        arrowRight="/arrowright1.svg"
+        marketCandidateTop="1661px"
+      />
+      <FormContainer
+        dimension="/vector66.svg"
+        dimensionText="/logo-style-guide-top6.svg"
+        imageDimensions="/secondary-cricle-button.svg"
+      />
+      <div className={styles.marketCandidates}>Market Candidates</div>
+      <div className={styles.positionIn}>Position In</div>
+      <SidemenuLarge
+        logo="/logo1.svg"
+        squaresFour="/squaresfour2.svg"
+        chartBar="/chartbar2.svg"
+        performance1="로그"
+        cursorClick="/cursorclick2.svg"
+        hotjar="승률 검색"
+        sUPPORT="코인 검색"
+        ticket="/ticket2.svg"
+        tickets="이름별 선택"
+        user1="/user2.svg"
+        agents="거래량별 선택"
+        users="/users2.svg"
+        customers="시간별 선택"
+        cube="/cube2.svg"
+        shoppingCartSimple="/shoppingcartsimple2.svg"
+        file="/file2.svg"
+        moon="/moon2.svg"
+        button="/button1.svg"
+        gear="/gear2.svg"
+        showLogoIcon={false}
+        sidemenuLargePosition="absolute"
+        sidemenuLargeWidth="259px"
+        sidemenuLargeHeight="3109px"
+        sidemenuLargeTop="110px"
+        sidemenuLargeLeft="0px"
+      />
+      <img className={styles.offIcon} alt="" src="/off.svg" />
+      <img className={styles.offIcon1} alt="" src="/off.svg" />
+    </div>
+  );
+};
+
+export default LoggedIn;

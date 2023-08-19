@@ -1,0 +1,27 @@
+.gearIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.settings {
+  position: relative;
+  line-height: 140%;
+}
+.container,
+.designerTeam {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.container {
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+  font-size: 14px;
+  color: #585874;
+  font-family: Inter;
+}

@@ -1,0 +1,32 @@
+.marketCandidates,
+.positionIn {
+  position: absolute;
+  top: 168px;
+  left: 294px;
+}
+.positionIn {
+  top: 1610px;
+  left: 282px;
+}
+.offIcon,
+.offIcon1 {
+  position: absolute;
+  top: 259px;
+  left: 327px;
+  width: 32px;
+  height: 30px;
+}
+.offIcon1 {
+  top: 1701px;
+}
+.loggedIn {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 3219px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 24px;
+  color: #000;
+  font-family: Inter;
+}

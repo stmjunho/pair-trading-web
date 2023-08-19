@@ -1,0 +1,34 @@
+.orContinueWith {
+  position: absolute;
+  top: 590px;
+  left: 120px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #b5b5b5;
+}
+.groupChild {
+  position: absolute;
+  top: 657px;
+  left: 102px;
+  width: 165px;
+  height: 43.12px;
+}
+.signUp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+}
+.instanceParent {
+  position: absolute;
+  top: 162px;
+  left: 936px;
+  width: 369px;
+  height: 700.12px;
+  text-align: left;
+  font-size: 15px;
+  color: #a7a3ff;
+  font-family: Poppins;
+}

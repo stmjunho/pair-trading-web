@@ -1,0 +1,118 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 1440px;
+  height: 162px;
+}
+.copyright {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 110px;
+  line-height: 18px;
+}
+.socialMediaIcon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  background-color: #f2f1fa;
+}
+.facebookIcon {
+  position: absolute;
+  height: 50%;
+  width: 27.27%;
+  top: 25%;
+  right: 36.36%;
+  bottom: 25%;
+  left: 36.36%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.socialMediaIconSquarefaceb {
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+.twitterIcon {
+  position: absolute;
+  height: 40.57%;
+  width: 50%;
+  top: 29.72%;
+  right: 25%;
+  bottom: 29.72%;
+  left: 25%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.socialMediaContainer {
+  position: absolute;
+  top: 63px;
+  left: 1190px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.lineRoundedpasswordIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.home {
+  position: relative;
+  line-height: 18px;
+}
+.link,
+.masterLink,
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.masterLink {
+  align-items: center;
+  gap: 6px;
+}
+.link,
+.navList {
+  align-items: flex-start;
+}
+.navList {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% + 87px);
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.footersV12,
+.wrapper {
+  position: absolute;
+  left: 0;
+  width: 1440px;
+  height: 162px;
+}
+.wrapper {
+  top: 0;
+}
+.footersV12 {
+  bottom: 0;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+  font-size: 18px;
+  color: #9795b5;
+  font-family: "DM Sans";
+}

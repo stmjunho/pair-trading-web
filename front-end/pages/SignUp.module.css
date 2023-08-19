@@ -1,0 +1,66 @@
+.signUpTo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+}
+.loremIpsumIs,
+.signUpToParent {
+  position: absolute;
+  left: 0;
+  width: 396px;
+}
+.loremIpsumIs {
+  top: 80px;
+  font-size: 35px;
+  font-weight: 500;
+  display: inline-block;
+}
+.signUpToParent {
+  top: 0;
+  height: 133px;
+}
+.ifYouAlready {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 321px;
+}
+.loginHere {
+  font-weight: 600;
+  color: #4d47c3;
+}
+.youCanLoginContainer {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: inline-block;
+  width: 308px;
+}
+.ifYouAlreadyHaveAnAccountParent {
+  position: absolute;
+  top: 186px;
+  left: 4px;
+  width: 321px;
+  height: 54px;
+  font-size: 16px;
+}
+.groupParent {
+  position: absolute;
+  top: 207px;
+  left: 183px;
+  width: 396px;
+  height: 240px;
+}
+.signUp {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 50px;
+  color: #000;
+  font-family: Poppins;
+}

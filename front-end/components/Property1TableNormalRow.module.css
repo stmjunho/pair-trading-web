@@ -1,0 +1,10 @@
+.property1tableNormalRow {
+  position: relative;
+  border: 1px solid #b9b9b9;
+  box-sizing: border-box;
+  width: 993px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}

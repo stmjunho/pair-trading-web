@@ -1,0 +1,53 @@
+.logogoogleIcon {
+  position: relative;
+  width: 111.69px;
+  height: 36.85px;
+}
+.logoyoutubeIcon,
+.vectorIcon {
+  position: relative;
+  width: 136.72px;
+  height: 26.74px;
+}
+.logoyoutubeIcon {
+  width: 125.88px;
+  height: 28.11px;
+}
+.logopinterestIcon {
+  position: relative;
+  width: 141.13px;
+  height: 34.15px;
+}
+.logotwitchIcon,
+.logowebflowIcon {
+  position: relative;
+  width: 108.36px;
+  height: 36.12px;
+}
+.logowebflowIcon {
+  width: 134.85px;
+  height: 33.92px;
+}
+.logoStripV1,
+.logosContainer,
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logosContainer {
+  flex-direction: row;
+  gap: 92px;
+}
+.logoStripV1,
+.wrapper {
+  background-color: #fff;
+  width: 1440px;
+  flex-direction: column;
+}
+.wrapper {
+  height: 237px;
+}
+.logoStripV1 {
+  overflow: hidden;
+}

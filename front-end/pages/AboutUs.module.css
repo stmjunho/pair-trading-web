@@ -1,0 +1,159 @@
+.container {
+  position: absolute;
+  top: 0.15px;
+  left: 0;
+  background-color: #fff;
+  width: 1440px;
+  height: 117.85px;
+}
+.logoStyleGuideTop {
+  position: absolute;
+  top: 41.83px;
+  left: 110px;
+  width: 261.31px;
+  height: 34.35px;
+}
+.lineRoundedpasswordIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.home {
+  position: relative;
+  line-height: 18px;
+}
+.link,
+.masterLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.masterLink {
+  align-items: center;
+  gap: 6px;
+}
+.link {
+  align-items: flex-start;
+}
+.lineRoundedchevronDown3 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.sections {
+  position: absolute;
+  top: 47px;
+  left: 416.31px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 33px;
+}
+.buttonsSet,
+.login,
+.navList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.login {
+  gap: 6px;
+}
+.buttonsSet,
+.navList {
+  width: 220px;
+}
+.navList {
+  padding: 0 0 0 25px;
+  box-sizing: border-box;
+  gap: 16px;
+}
+.buttonsSet {
+  position: absolute;
+  top: 32px;
+  right: 110px;
+}
+.container1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 1440px;
+  height: 650px;
+}
+.stm {
+  margin: 0;
+}
+.featureTitle,
+.paragraph {
+  position: absolute;
+  left: 66.94%;
+  display: inline-block;
+}
+.paragraph {
+  width: 30.28%;
+  top: calc(50% - 262px);
+  line-height: 30px;
+  white-space: pre-wrap;
+  height: 628px;
+}
+.featureTitle {
+  width: 18.26%;
+  top: calc(50% - 291px);
+  font-size: 22px;
+  line-height: 28px;
+  color: #5d5a88;
+}
+.containerIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+  width: 750px;
+  height: 500px;
+  object-fit: cover;
+}
+.imagePlaceholder,
+.wrapper {
+  position: absolute;
+  top: 75px;
+  left: 111px;
+  width: 750px;
+  height: 500px;
+}
+.wrapper {
+  top: 0;
+  left: -1px;
+  width: 1440px;
+  height: 732px;
+}
+.aboutus,
+.contentSectionsV6 {
+  background-color: #fff;
+  overflow: hidden;
+}
+.contentSectionsV6 {
+  position: absolute;
+  top: 118px;
+  left: 0;
+  width: 1438px;
+  height: 650px;
+  text-align: left;
+  color: #9795b5;
+}
+.aboutus {
+  position: relative;
+  width: 100%;
+  height: 1024px;
+  text-align: center;
+  font-size: 18px;
+  color: #5d5a88;
+  font-family: "DM Sans";
+}

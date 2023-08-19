@@ -1,0 +1,80 @@
+.copyright {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 110px;
+  line-height: 18px;
+}
+.socialMediaIconSquarefaceb {
+  position: relative;
+  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+}
+.socialMediaContainer {
+  position: absolute;
+  top: 63px;
+  left: 1190px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.lineRoundedpasswordIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.home {
+  position: relative;
+  line-height: 18px;
+}
+.link,
+.masterLink,
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.masterLink {
+  align-items: center;
+  gap: 6px;
+}
+.link,
+.navList {
+  align-items: flex-start;
+}
+.navList {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% + 87px);
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.footersV12,
+.wrapper {
+  background-color: #fff;
+  width: 1440px;
+}
+.wrapper {
+  position: relative;
+  height: 162px;
+}
+.footersV12 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  color: #9795b5;
+  font-family: "DM Sans";
+}

@@ -1,0 +1,79 @@
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  background-color: #f0efff;
+  width: 369px;
+  height: 62px;
+}
+.password {
+  position: absolute;
+  top: 20px;
+  left: 29.25px;
+  display: inline-block;
+  width: 82.13px;
+}
+.invisible1Icon {
+  position: absolute;
+  top: 23px;
+  left: 320px;
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+}
+.groupContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 369px;
+  height: 62px;
+}
+.forgorPassword {
+  position: absolute;
+  top: 79px;
+  left: 250px;
+  font-size: 13px;
+  color: #b0b0b0;
+}
+.groupParent {
+  position: absolute;
+  top: 173px;
+  left: 0;
+  width: 369px;
+  height: 99px;
+}
+.orContinueWith {
+  position: absolute;
+  top: 431px;
+  left: 120px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #b5b5b5;
+}
+.groupItem {
+  position: absolute;
+  top: 500px;
+  left: 102px;
+  width: 165px;
+  height: 43.12px;
+}
+.signIn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+}
+.componentParent {
+  position: absolute;
+  top: 240px;
+  left: 941px;
+  width: 369px;
+  height: 543.12px;
+  text-align: left;
+  font-size: 15px;
+  color: #a7a3ff;
+  font-family: Poppins;
+}

@@ -1,0 +1,56 @@
+.bg,
+.card {
+  position: absolute;
+}
+.card {
+  top: -1px;
+  left: -1px;
+  border-radius: 24px;
+  background-color: #fff;
+  border: 1px solid #d4d2e3;
+  box-sizing: border-box;
+  width: 390px;
+  height: 641px;
+}
+.bg {
+  top: 0;
+  left: 0;
+  border-radius: 24px 24px 0 0;
+  background-color: #f9f9ff;
+  width: 388px;
+  height: 333px;
+}
+.billing,
+.price,
+.subtitle {
+  position: absolute;
+  top: 47px;
+  left: 138px;
+  line-height: 38px;
+}
+.billing,
+.price {
+  top: 85px;
+  left: 139px;
+  font-size: 56px;
+  line-height: 66px;
+}
+.billing {
+  top: 153px;
+  left: 174.5px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #8d8ba7;
+}
+.pricingCard {
+  position: absolute;
+  top: 375px;
+  left: 526px;
+  width: 388px;
+  height: 639px;
+  text-align: center;
+  font-size: 28px;
+  color: #5d5a88;
+  font-family: "DM Sans";
+}

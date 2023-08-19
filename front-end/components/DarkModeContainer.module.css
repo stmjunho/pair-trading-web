@@ -1,0 +1,114 @@
+.line,
+.logoIcon {
+  position: relative;
+  width: 161.41px;
+  height: 36.3px;
+}
+.line {
+  border-top: 1px solid #f1f1f4;
+  box-sizing: border-box;
+  width: 197px;
+  height: 1px;
+}
+.squaresfourIcon {
+  width: 20px;
+  height: 20px;
+}
+.dashboard,
+.squaresfourIcon {
+  position: relative;
+}
+.container2 {
+  position: absolute;
+  top: calc(50% - 9.3px);
+  left: 14.8px;
+  width: 94px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.overview {
+  position: relative;
+  border-radius: 10px;
+  background-color: #e5f0ff;
+  width: 227px;
+  height: 46px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.container1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #006aff;
+}
+.analytics {
+  align-self: stretch;
+  position: relative;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8b8ba7;
+}
+.performance {
+  position: relative;
+  line-height: 140%;
+}
+.sharedFiles,
+.sharedFolder {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.sharedFiles {
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.line1 {
+  align-self: stretch;
+  position: relative;
+  border-top: 1px solid #f1f1f4;
+  box-sizing: border-box;
+  height: 1px;
+}
+.darkMode1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.buttonIcon {
+  position: relative;
+  border-radius: 30px;
+  width: 40px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.container,
+.darkMode {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 55px;
+}
+.container {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+  text-align: left;
+  font-size: 14px;
+  color: #585874;
+  font-family: Inter;
+}

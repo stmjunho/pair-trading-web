@@ -1,0 +1,40 @@
+.imagePlaceholderIcon {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+.featureHeading,
+.paragraph {
+  position: relative;
+  line-height: 38px;
+  display: inline-block;
+  width: 324px;
+}
+.paragraph {
+  font-size: 18px;
+  line-height: 30px;
+  color: #9795b5;
+  width: 364px;
+}
+.feature,
+.frame {
+  width: 364px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame {
+  height: 76px;
+  overflow: hidden;
+  flex-shrink: 0;
+  gap: 8px;
+}
+.feature {
+  height: 268px;
+  gap: 32px;
+  text-align: center;
+  font-size: 28px;
+  color: #5d5a88;
+  font-family: "DM Sans";
+}

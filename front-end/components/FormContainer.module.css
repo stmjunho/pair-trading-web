@@ -1,0 +1,57 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 1440px;
+  height: 110px;
+}
+.home {
+  position: relative;
+  line-height: 18px;
+}
+.vectorIcon {
+  position: relative;
+  width: 13.07px;
+  height: 7.23px;
+}
+.linkList,
+.sections {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.sections {
+  position: absolute;
+  top: 46px;
+  right: 196px;
+  justify-content: flex-end;
+  gap: 33px;
+}
+.logoStyleGuideTop {
+  position: absolute;
+  top: 37.83px;
+  left: 52px;
+  width: 261.31px;
+  height: 34.35px;
+}
+.headersV12,
+.secondaryCricleButton {
+  position: absolute;
+  top: 28px;
+  left: 1280px;
+  width: 50px;
+  height: 50px;
+}
+.headersV12 {
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 110px;
+  text-align: center;
+  font-size: 18px;
+  color: #5d5a88;
+  font-family: "DM Sans";
+}
