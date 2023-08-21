@@ -1,0 +1,4 @@
+{
+  "/chart/page": "app/chart/page.js",
+  "/(default)/page": "app/(default)/page.js"
+}
